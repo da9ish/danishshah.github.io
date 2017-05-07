@@ -1,0 +1,31 @@
+.logo_nav{
+	width: 64px;
+	height: 64px;
+	margin-right: 8px;
+	padding: 8px;
+}
+
+.brand-logo{
+	font-family: 'Lato', sans-serif;
+}
+
+.center_align{
+    display: flex;
+    justify-content: center;
+}
+
+.blog_heading{
+	font-weight: 100;
+	font-size: 3.5em;
+	margin-bottom: 5px;
+}
+
+.blog_sub_heading{
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+.auth{
+	margin: 5px;
+	font-style: italic;
+}

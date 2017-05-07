@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Novum</title>
+	<link rel="icon" href="../../fav_icon.png">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" type="text/css" href="css/blog_1.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+
+</head>
+<body onload="progress()">
+
+	<div id="loader">
+		<center>
+			<img src="../../fav_icon.png" class="logo_loader">
+			<div class="progress deep-purple lighten-4">
+				<div class="indeterminate deep-purple lighten-2"></div>
+			</div>
+			<p class="grey-text text-darken-2 loader_txt">Adapting...</p>
+		</center>
+	</div>
+
+	<div id="main">
+
+		<nav class="white">
+			<div class="nav_wrapper container">
+				<a href="../../index.html"><img class="logo_nav" src="../../fav_icon.png"/></a>
+				<a href="../../index.html" class="brand-logo grey-text text-darken-2">Novum</a>
+
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="#" class="grey-text text-darken-2">Login</a></li>
+					<li><a href="#" class="grey-text text-darken-2">Sign Up</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container">
+
+			<div class="row"></div>
+
+			<div class="row">
+				<div class="col s11 center_align">
+					<img src="blog_1.jpg">
+				</div>
+			</div>		
+
+			<div class="col s11">
+				<p class="blog_heading">What is Adaptive User Interface?</p>
+				<p class="blog_sub_heading">An adaptive user interface (also known as AUI) is a user interface (UI) which adapts, that is changes, its layout and elements to the needs of the user or context and is similarly alterable by each user.
+	These mutually reciprocal qualities of both adapting and being adaptable are, in a true AUI, also innate to elements that comprise the interface's components; portions of the interface might adapt to and affect other portions of the interface.
+	This later mechanism is usually employed to integrate two logically distinct components, such as an interactive document and an application (e.g. a web browser) into one seamless whole.
+	The user adaptation is often a negotiated process, as an adaptive user interface's designers ignore where user interface components ought to go while affording a means by which both the designers and the user can determine their placement, often (though not always) in a semi-automated, if not fully automated manner.
+	An AUI is primarily created based on the features of the system, and the knowledge levels of the users that will utilize it.</p>
+
+				<p class="blog_heading">What Adaptive User Interface could do?</p>
+				<p class="blog_sub_heading">Adaptive User Interface could be the future of User Interface, knowing each user’s need we can adapt to their requirements and display information accordingly.
+				Consider a UI that could not just learn but adapt according to the user.
+				<br><br>
+				Types<br><br>
+				&bull; Adaptive presentation<br>
+				The goal behind adaptive presentation is to display certain information based on the current user. This may mean that users with only basic knowledge of a system will only be shown minimal information.<br>Conversely, a user with advanced knowledge will have access to more detailed information and capabilities.
+	A way that the AUI can achieve this differentiation could be to hide information to be presented based on the user's experience level. Another possibility is to control the amount of links to relevant sources on the page.<br><br>
+				&bull; Adaptive navigation<br>
+				Adaptive navigation intends to guide a user to their specific goal within the system by altering the way the system is navigated based on certain factors of the user. These factors can include the users expertise level with the system/subject, the current goal within the system, and other relevant factors.<br> 
+	Examples of adaptive navigation can be achieved in many ways, similar to adaptive presentation. These can include examples such as providing links to help achieve a user's specific goal, giving reference on a page to where a user is, or altering the resources available to the user.
+
+				</p>
+				<p class="grey-text text-darken-2 right auth">-Author: Danish Shah</p><br><br>
+				<p class="grey-text text-darken-2 right auth">-Reference: Wikipedia</p><br>
+			</div>
+		</div>
+
+		<footer class="page-footer grey lighten-4">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+		                <p class="grey-text text-darken-2">Website developed and maintained by-</p>
+		                <h5>Danish Shah</h5>
+					</div>
+					<div class="col l6 offset-12 s12">
+						<h5>Social Links:</h5>
+						<ul>
+							<li class="valign-wrapper"><img class="s_links" src="../../facebook-box.png"><a href="#">Facebook</a></li>
+							<li class="valign-wrapper"><img class="s_links" src="../../linkedin-box.png"><a href="#">LinkedIn</a></li>
+							<li class="valign-wrapper"><img class="s_links" src="../../github-face.png"><a href="#">GitHub</a></li>
+							<li class="valign-wrapper"><img class="s_links" src="../../google-plus.png"><a href="#">Google+</a></li>
+							<li class="valign-wrapper"><img class="s_links" src="../../instagram.png"><a href="#">Instagram</a></li>
+
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			<div class="footer-copyright">
+					<div class="container grey-text text-darken-2">
+						&copy; 2017 Danish Shah. All Rights Reserved.
+					</div>
+				</div>
+		</footer>
+
+	</div>
+
+	<script type="text/javascript">
+		
+		function progress() {		
+
+			setTimeout(function(){ 
+				document.getElementById('loader').style.display = "none";
+				document.getElementById('main').style.display = "block";	
+			 }, 1500);
+		}
+
+	</script>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  	<script type="text/javascript" src="../../js/materialize.min.js"></script>	
+</body>
+</html>

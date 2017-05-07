@@ -1,0 +1,61 @@
+#main{
+	display: none;
+}
+
+.logo_nav{
+	width: 64px;
+	height: 64px;
+	margin-right: 8px;
+	padding: 8px;
+}
+
+.brand-logo{
+	font-family: 'Lato', sans-serif;
+}
+
+.center_align{
+    display: flex;
+    justify-content: center;
+}
+
+.blog_heading{
+	font-weight: 100;
+	font-size: 3.5em;
+	margin-bottom: 5px;
+}
+
+.blog_sub_heading{
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+.auth{
+	margin: 5px;
+	font-style: italic;
+	margin-right: 54px;
+}
+
+.container{
+	margin-bottom: 10px;
+}
+
+.s_links{
+	margin-right: 8px;
+}
+
+#loader{
+	margin-top: 200px;
+}
+
+.progress{
+	width: 15%;
+}
+
+.logo_loader{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.loader_txt{
+	font-style: italic;
