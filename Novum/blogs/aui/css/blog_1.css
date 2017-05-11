@@ -10,11 +10,21 @@
 	padding: 8px;
 }
 
+.progress{
+	width: 15%;
+}
+
+
 @media only screen and (max-width : 992px){
 	.logo_nav{
 		width: 56px;
 		height: 56px;
 	}
+
+	.progress{
+		width: 30%;
+	}
+
 }
 
 .brand-logo{
@@ -60,10 +70,6 @@
 
 #loader{
 	margin-top: 200px;
-}
-
-.progress{
-	width: 15%;
 }
 
 .logo_loader{
