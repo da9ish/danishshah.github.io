@@ -43,16 +43,6 @@
 	border-color: #7e57c2; 
 }
 
-.card_action{
-	color: #7e57c2;
-}
-
-.landing{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-}
 
 .by{
 	font-style: italic;
@@ -80,4 +70,3 @@
 	font-style: italic;
 	font-size: 1.2em;
 }
-
