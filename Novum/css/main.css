@@ -9,6 +9,13 @@
 	padding: 8px;
 }
 
+@media only screen and (max-width : 992px){
+	.logo_nav{
+		width: 56px;
+		height: 56px;
+	}
+}
+
 .brand-logo{
 	font-family: 'Lato', sans-serif;
 }

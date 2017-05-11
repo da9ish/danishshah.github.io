@@ -3,12 +3,18 @@
 }
 
 .logo_nav{
-	max-width: 64px;
-	max-height: 64px;
-	min-width: 56px;
-	min-height: 56px;
+	width: 64px;
+	height: 64px;
+	
 	margin-right: 8px;
 	padding: 8px;
+}
+
+@media only screen and (max-width : 992px){
+	.logo_nav{
+		width: 56px;
+		height: 56px;
+	}
 }
 
 .brand-logo{
