@@ -54,3 +54,7 @@ body{
 	max-height: none;
 	height: auto;
 }
+
+.card-image img{
+	height: auto !important;
+}
