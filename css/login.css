@@ -1,0 +1,63 @@
+#main{
+	display: none;
+}
+
+.logo_nav{
+	width: 64px;
+	height: 64px;
+	
+	margin-right: 8px;
+	padding: 8px;
+}
+
+.progress{
+	width: 15%;
+}
+
+
+@media only screen and (max-width : 992px){
+	.logo_nav{
+		width: 56px;
+		height: 56px;
+	}
+
+	.progress{
+		width: 30%;
+	}
+
+}
+
+.brand-logo{
+	font-family: 'Lato', sans-serif;
+}
+
+.active{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.center_align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+	margin-bottom: 10px;
+}
+
+.s_links{
+	margin-right: 8px;
+}
+
+#loader{
+	margin-top: 200px;
+}
+
+.logo_loader{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.loader_txt{
+	font-style: italic;
