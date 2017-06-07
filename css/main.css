@@ -25,7 +25,7 @@ body{
 }
 
 .transparent{
-	background-color: rgba(255, 255, 255, 0);
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
 }
 
 @media only screen and (max-width : 600px){
@@ -35,9 +35,35 @@ body{
 	}
 }
 
+.land{
+	height: 100vh;
+}
 
+.landing_div{
+	position: absolute;
+}
 
 .landing{
-	width: 100%;
-	height: 100vh;
+	width: 100% ;
+	
+}
+
+.container{
+	position: relative;
+}
+
+.name{
+	font-family: 'Oswald', sans-serif;
+}
+
+.qual{
+	font-family: 'Lato', sans-serif;
+}
+
+.right{
+	float: right;
+}
+
+.page-footer{
+	position: relative;
 }
