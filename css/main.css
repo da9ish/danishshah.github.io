@@ -36,7 +36,7 @@ body{
 }
 
 .land{
-	height: 100vh;
+	height: auto;
 }
 
 .landing_div{
@@ -62,6 +62,21 @@ body{
 
 .right{
 	float: right;
+}
+
+.head{
+	padding: 20px;
+}
+
+.bottom{
+	padding: 40px;
+}
+.h_about{
+	font-weight: 100;
+}
+
+.b_about{
+	font-weight: 200;
 }
 
 .page-footer{

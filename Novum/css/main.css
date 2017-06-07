@@ -32,17 +32,24 @@
 
 .brand-logo{
 	font-family: 'Lato', sans-serif;
+	margin: 0;
 }
 
 .aui_heading{
 	font-weight: 100;
 	font-size: 3.5em;
-	margin-bottom: 5px;
+	margin-bottom: 5px;	
+	margin-left: 16px;
 }
 
 .aui_sub_heading{
 	font-weight: 300;
 	font-size: 1.5em;
+}
+
+.card-title{
+	background: linear-gradient(rgba(255,255,255, 0), rgba(255,255,255, 0.3));
+    width: 100%;
 }
 
 .block_quotes{
@@ -79,4 +86,9 @@
 .loader_txt{
 	font-style: italic;
 	font-size: 1.2em;
+}
+
+.blog_container{
+	display: flex;
+	flex-wrap: wrap;
 }

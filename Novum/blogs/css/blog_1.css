@@ -1,0 +1,81 @@
+#main{
+	display: none;
+}
+
+.logo_nav{
+	width: 64px;
+	height: 64px;
+	
+	margin-right: 8px;
+	padding: 8px;
+}
+
+.progress{
+	width: 100%;
+}
+
+
+@media only screen and (max-width : 992px){
+	.logo_nav{
+		width: 56px;
+		height: 56px;
+	}
+
+	.progress{
+		width: 100%;
+	}
+
+}
+
+.brand-logo{
+	font-family: 'Lato', sans-serif;
+}
+
+.center_align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog_img{
+	display: block;
+	width: 100%;
+}
+
+.blog_heading{
+	font-weight: 100;
+	font-size: 3.5em;
+	margin-bottom: 5px;
+}
+
+.blog_sub_heading{
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+.auth{
+	margin: 5px;
+	font-style: italic;
+	margin-right: 54px;
+}
+
+.container{
+	margin-bottom: 10px;
+}
+
+.s_links{
+	margin-right: 8px;
+}
+
+#loader{
+	margin-top: 200px;
+}
+
+.logo_loader{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.loader_txt{
+	font-style: italic;
