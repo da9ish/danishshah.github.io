@@ -62,6 +62,11 @@
 .sample_container{
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.row .col .s11{
+	margin: 0;
 }
 
 .container{
