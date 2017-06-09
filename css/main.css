@@ -3,13 +3,20 @@ body{
 	padding: 0;
 }
 
-.container{
-	height: 100vh;
-}
-
 .center{
 	width: 100%;
 	text-align: center;
+}
+
+nav ul li a:hover{
+	border-bottom: 1px solid #121212;
+	background-color: transparent;
+}
+
+nav ul li.active{
+	background-color: transparent;
+	border-bottom: 1px solid #121212;
+	color: #121212;
 }
 
 .text{
@@ -23,13 +30,18 @@ body{
 }
 
 #main{
-	display: none;
+	display: block;
 }
 
 .wrapper{
 	background-position: center;
 	background-size: cover;
 	min-height: 100vh;		
+}
+
+img.responsive-img{
+	height: 100vh;
+	width: auto;	
 }
 
 .logo_nav{
@@ -44,27 +56,26 @@ body{
 }
 
 .transparent{
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
-}
-
-@media only screen and (max-width : 600px){
-	.logo_nav{
-		width: 56px;
-		height: 56px;
-	}
-}
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+} 
 
 .land{
-	height: auto;
+	position: relative;
+	width: 100%;
+	height: 100vh;	
+	margin-bottom: -64px;
+	z-index: 2;
 }
 
 .landing_div{
 	position: absolute;
+	height: 100%;
+	z-index: -1;	
 }
 
 .landing{
-	width: 100% ;
-	
+	width: auto;
+	height: 100vh;	
 }
 
 .container{
@@ -72,11 +83,30 @@ body{
 }
 
 .name{
+	padding-top: 250px;			
+	margin: 0;
+	font-size: 100px;
+	font-weight: 300;
+	line-height: 100px;
 	font-family: 'Oswald', sans-serif;
+	font-size: 100px;			
+	color: #121212;
 }
 
-.qual{
+.qualification{			
+	margin: 0;
 	font-family: 'Lato', sans-serif;
+	font-size: 25px;			
+	color: #121212;
+	margin: 20px;
+	padding-bottom: 200px;
+}
+
+.divider{
+	margin: 30px;
+	width: 30%;
+	height: 2px;
+	background-color: #121212;
 }
 
 .right{

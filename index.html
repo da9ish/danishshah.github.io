@@ -5,70 +5,65 @@
 	<meta name="mobile-web-app-capable" content="yes" />
   	<meta name="theme-color" content="#7e57c2" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<link rel="icon" href="logo.png">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>	
 	<link rel="stylesheet" type="text/css" href="css/main.css">	
 	<link href="https://fonts.googleapis.com/css?family=Lato:500,700|Oswald" rel="stylesheet">
 
 </head>
 <body>
 
-	<div class="container valign-wrapper">
-			<div class="col s12 m12 l12 center">
-				
-				<p class="text flow-text">Coming Soon... :D</p>
-			
-			</div>
-		
-	</div>
-
 	<div id="main">
 
 		<div class="col s12 landing_div">
-			<img class="landing responsive-img" src="landing_main.jpg">
+			<img class="responsive-img landing hide-on-med-and-down" src="landing_main.jpg">
+			<img class="responsive-img landing hide-on-med-and-up" src="landing_mob.jpg">
 		</div>
 
-
-		<nav class="transparent">
-			<div class="nav_wrapper container">
+		<nav class="transparent z-depth-0">
+			<div class="nav_wrapper container">				
 				<a href="index.html"><img class="logo_nav" src="logo_nav.png"/></a>
-				<a href="index.html" class="brand-logo grey-text text-darken-2">Danish Shah</a>
+				<a href="index.html" class="brand-logo grey-text text-darken-4">Danish Shah</a>
 
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li class="active"><a href="#" class="grey-text text-darken-2 bold">HOME</a></li>
-					<li><a href="#" class="grey-text text-darken-2 bold">ABOUT</a></li>
-					<li><a href="./Project/index.html" class="grey-text text-darken-2 bold">PROJECTS</a></li>
-					<li><a href="./App/index.html" class="grey-text text-darken-2 bold">APPS</a></li>
-					<li><a href="#" class="grey-text text-darken-2 bold">DESIGNS</a></li>
+					<li class="active"><a href="#" class="grey-text text-darken-4 bold">HOME</a></li>
+					<li><a href="#" class="grey-text text-darken-4 bold">ABOUT</a></li>
+					<li><a href="./Project/index.html" class="grey-text text-darken-4 bold">PROJECTS</a></li>
+					<li><a href="./App/index.html" class="grey-text text-darken-4 bold">APPS</a></li>
+					<li><a href="#" class="grey-text text-darken-4 bold">DESIGNS</a></li>
 				</ul>
+
+				<ul id="mobile" class="side-nav">
+					<li class="active"><a href="#" class="grey-text text-darken-4 bold">HOME</a></li>
+					<li><a href="#" class="grey-text text-darken-4 bold">ABOUT</a></li>
+					<li><a href="./Project/index.html" class="grey-text text-darken-4 bold">PROJECTS</a></li>
+					<li><a href="./App/index.html" class="grey-text text-darken-4 bold">APPS</a></li>
+					<li><a href="#" class="grey-text text-darken-4 bold">DESIGNS</a></li>
+				</ul>
+
+  				<a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
 			</div>
 		</nav>
 
-		<!-- <div class="container"> -->
-
-			<div class="row land valign-wrapper">
-				<div class="col l4 m4 s12 right center">
-					<h1 class="name">Danish Shah</h1>
-					<h5 class="qual">Developer &bullet; Designer</h5>
-				</div>
+		<div class="row land valign-wrapper">
+			<div class="col l5 m5 s12 right center-align center">
+				<center>
+				<p class="name">Danish Shah</p>
+				<div class="divider"></div>
+				<p class="qualification">Developer &bull; Designer</p>
+				</center>
 			</div>
+		</div>
 
-			<div class="row">
-				<div class="col l12 s12 m12 xl12 center grey head lighten-2">
-					<div class="container">
-						<h3 class="h_about">About</h3>
-					</div>
-				</div>
-
-				<div class="col l12 s12 m12 xl12 center grey bottom lighten-3">
-					<div class="container">
-						<h5 class="b_about">I am 20 a young passionate developer.</h5>
-					</div>
-				</div>
+		<div class="col l12 s12 m12 xl12 center grey bottom lighten-3">
+			<div class="container">
+				<h3 class="h_about">About</h3>
+				<h5 class="b_about">"I am 20 a young passionate developer."</h5>
 			</div>
-
-		<!-- </div> -->
+		</div>
 
 		<footer class="page-footer grey lighten-4">
 			<div class="container">
@@ -101,5 +96,6 @@
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   	<script type="text/javascript" src="js/materialize.min.js"></script>	
+  	<script type="text/javascript" src="js/init.js"></script>	
 </body>
 </html>
