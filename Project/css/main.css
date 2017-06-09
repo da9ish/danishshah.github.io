@@ -53,7 +53,6 @@ nav ul li.active{
 .ops_projects{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 }
 
 .project_image{
