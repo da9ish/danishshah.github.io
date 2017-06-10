@@ -95,3 +95,7 @@
 	flex-wrap: wrap;
 	flex-direction: row-reverse;
 }
+
+.s_links{
+	margin-right: 16px;
+}

@@ -13,15 +13,29 @@ body{
 	min-height: 100vh;		
 }
 
+.brand-logo{
+	font-weight: 100;
+}
+
+
+nav ul li a{
+	line-height: 1.5;
+	margin-top: 20px;
+	padding: 0;
+	margin-left: 15px; 
+	margin-right: 15px; 
+	transition-duration: 0.3s;
+}
+
 nav ul li a:hover{
-	border-bottom: 1px solid #121212;
+	transition-duration: 0.3s;
+	border-bottom: 1px solid #fff;
 	background-color: transparent;
 }
 
-nav ul li.active{
+nav ul li a.active{
 	background-color: transparent;
-	border-bottom: 1px solid #121212;
-	color: #121212;
+	border-bottom: 1px solid #fff;
 }
 
 .logo_nav{
@@ -46,6 +60,14 @@ nav ul li.active{
 	}
 }
 
+.bottom{
+	padding: 40px;
+}
+
+.title{
+	font-weight: 200;
+}	
+
 .ops_heading{
 	font-weight: 100;
 }
@@ -67,4 +89,8 @@ nav ul li.active{
 
 .card-image img{
 	height: auto !important;
+}
+
+.s_links{
+	margin-right: 16px;
 }

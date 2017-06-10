@@ -1,0 +1,116 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#main{
+	display: block;
+}
+
+.wrapper{
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;		
+}
+
+.brand-logo{
+	font-weight: 100;
+}
+
+nav ul li a{
+	line-height: 1.5;
+	margin-top: 20px;
+	padding: 0;
+	margin-left: 15px; 
+	margin-right: 15px; 
+	transition-duration: 0.3s;
+}
+
+nav ul li a:hover{
+	transition-duration: 0.3s;
+	border-bottom: 1px solid #fff;
+	background-color: transparent;
+}
+
+nav ul li a.active{
+	background-color: transparent;
+	border-bottom: 1px solid #fff;
+}
+
+.logo_nav{
+	height: 64px;
+	margin-right: 8px;
+	padding: 12px;
+
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.bottom{
+	padding: 40px;
+}
+
+.transparent{
+	background-color: rgba(255, 255, 255, 0);
+}
+
+@media only screen and (max-width : 600px){
+	.logo_nav{
+		width: 56px;
+		height: 56px;
+	}
+}
+
+.title{
+	font-weight: 200;
+}
+
+.horizontal{
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0
+}
+
+.vertical{
+	width: auto;
+	height: 100%;
+	margin: 0;
+	padding: 0
+}
+
+.design{
+	border: 1px solid #f5f5f5;
+}
+
+.asdf{
+	position: relative;
+	margin-bottom: -6px;
+}
+
+.mask{
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+	background-color: rgba(0,0,0,0.3);
+	opacity: 0;
+}
+
+.mask:hover{
+	transition-duration: 0.3s;
+	opacity: 1;
+}
+
+.detail{
+	/*opacity: 0.5;	*/
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+}
+
+.s_links{
+	margin-right: 16px;
+}
