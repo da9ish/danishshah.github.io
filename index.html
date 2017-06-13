@@ -5,6 +5,7 @@
 	<meta name="mobile-web-app-capable" content="yes" />
   	<meta name="theme-color" content="#121212" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="mobile-web-app-capable" content="yes" />
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<link rel="icon" href="images/logo.png">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,7 +14,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:500,700|Oswald" rel="stylesheet">
 
 </head>
-<body>
+<body onload="getVisitorCount()">
 
 	<div id="main">
 
@@ -202,7 +203,10 @@
 			</div>
 			<div class="footer-copyright grey darken-4">
 					<div class="container grey-text text-lighten-2">
-						&copy; 2017 Danish Shah. All Rights Reserved.
+						<div class="row">
+							<div class="col s6 m6 l6 xl6">&copy; 2017 Danish Shah. All Rights Reserved.</div>
+							<div id="count_div" class="col s6 m6 l6 xl6"></div>
+						</div>
 					</div>
 				</div>
 		</footer>
@@ -210,6 +214,40 @@
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   	<script type="text/javascript" src="js/materialize.min.js"></script>	
-  	<script type="text/javascript" src="js/init.js"></script>	
+  	<script type="text/javascript" src="js/init.js"></script>	  		
+	<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+	<script type="text/javascript">
+		// Initialize Firebase
+		var config = {
+		apiKey: "AIzaSyCRNnwdcFW-Lu3opOeeyOhNJGPvqVGkQco",
+		authDomain: "danish-shah.firebaseapp.com",
+		databaseURL: "https://danish-shah.firebaseio.com",
+		projectId: "danish-shah",
+		storageBucket: "danish-shah.appspot.com",
+		messagingSenderId: "175763857775"
+		};
+		firebase.initializeApp(config);
+
+		function getVisitorCount(){
+			var count = 0;
+			var database = firebase.database();
+			database.ref('/visitor-count/').once('value').then(function(snapshot){
+				count = snapshot.val().count;
+				addVisitorCount(count);
+			});
+			
+		}
+
+		function addVisitorCount(count) {
+			var ele = document.getElementById('count_div');
+			console.log(count);
+			var database = firebase.database();
+			database.ref('/visitor-count/').set({
+				count: count+1
+			});
+
+			ele.innerHTML += count + " Visitors";
+		}
+	</script>
 </body>
 </html>
