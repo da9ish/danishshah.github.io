@@ -6,17 +6,17 @@
     {
       "src": "logo.png",
       "type": "image/png",
-      "sizes": "48x48"
+      "sizes": "250x200"
     },
     {
       "src": "logo.png",
       "type": "image/png",
-      "sizes": "96x96"
+      "sizes": "250X200"
     },
     {
       "src": "logo.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "250X200"
     }
   ],
   "start_url": "index.html"
