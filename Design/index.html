@@ -10,7 +10,7 @@
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	<link rel="stylesheet" type="text/css" href="css/main.css">	
 	<link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
-
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
 
@@ -59,19 +59,9 @@
 				<div class="row"></div>
 
 				<div class="col s12 m12 l4 xl4 modal_opn" style="padding: 0px">
-					<div class="asdf">
-						<div class="mask">
-							<!-- <div class="detail">
-								<div class="container">
-									<div class="row"></div>
-									<div class="row">
-										<h5>Name: Earth</h5>
-										<p>Type: Low Poly</p>
-									</div>
-								</div>
-							</div> -->
-						</div>
-						<img class="responsive-img design horizontal" src="../images/earth.png">
+					<div onclick="openModal(this)" class="asdf">
+						<div class="mask"></div>
+						<img class="responsive-img design horizontal" src="https://firebasestorage.googleapis.com/v0/b/danish-shah.appspot.com/o/4k.jpg?alt=media&token=787c40fd-2ba6-45c5-978b-90de99193f2c">
 					</div>
 					
 					<div class="asdf">
@@ -287,15 +277,48 @@
 				
 			</div>
 			<div class="footer-copyright grey darken-4">
-					<div class="container grey-text text-lighten-2">
+					<p class="container grey-text text-lighten-2">
 						&copy; 2017 Danish Shah. All Rights Reserved.
-					</div>
+					</p>
 				</div>
 		</footer>
+	</div>
+
+	<div id="modal1" class="modal">
+		<div class="card hide-on-large-only">
+			<div class="card-image_1">
+				<img id="modal_img_1" class="responsive-img horizontal" src="../images/master_piece.jpg">
+			</div>
+			
+			<div class="card-content">
+				<h5>Title</h5>
+				<p>Sub title<p>
+				<br>
+				<p class="valign-wrapper"><i class="material-icons" style="margin-right: 8px">visibility</i> 1,312</p>
+			</div>
+			<div class="card-action"><a id="download" class="grey-text text-darken-4 waves-effect waves-dark" href="../images/master_piece.jpg" action="_blank">DOWNLOAD</a></div>
+		
+		</div>
+
+		<div class="card horizontal hide-on-med-and-down">
+			<div class="card-image">
+				<img id="modal_img_2" class="responsive-img horizontal" src="../images/master_piece.jpg">
+			</div>
+			<div class="card-stacked">
+				<div class="card-content">
+					<h5>Title</h5>
+					<p>Sub title<p>
+					<br>
+					<p class="valign-wrapper"><i class="material-icons" style="margin-right: 8px">visibility</i> 1,312</p>
+				</div>
+				<div class="card-action"><a id="download" class="grey-text text-darken-4 waves-effect waves-dark" href="../images/master_piece.jpg" action="_blank">DOWNLOAD</a></div>
+			</div>
+		</div>
 	</div>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   	<script type="text/javascript" src="js/materialize.min.js"></script>	
   	<script type="text/javascript" src="../js/init.js"></script>
+  	<script type="text/javascript" src="js/modal.js"></script>
 </body>
 </html>

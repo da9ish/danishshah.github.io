@@ -25,11 +25,10 @@
 
 		<div class="navbar-fixed">
 
-			<nav class="transparent z-depth-0">
+			<nav id="nav" class="transparent">
 				<div class="nav_wrapper container">
 					<a href="index.html"><img class="logo_nav" src="images/logo_nav.png"/></a>
 					<a href="index.html" class="brand-logo grey-text text-darken-4">Danish Shah</a>
-
 
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li class="active"><a href="index.html" class="grey-text text-darken-4 bold active"><p style="margin: 0;">HOME</p></a></li>
@@ -53,7 +52,7 @@
 		</ul>
 
 
-		<div class="row land valign-wrapper">
+		<div id="main" class="row land valign-wrapper">
 			<div class="col xl6 l6 m12 s12 right center-align center">
 				<center>
 				<p class="name flow-text">Danish Shah</p>
@@ -63,7 +62,7 @@
 			</div>
 		</div>
 
-		<div class="col l12 s12 m12 xl12 center grey bottom lighten-3">
+		<div class="col l12 s12 m12 xl12 center grey bottom lighten-3 about">
 			<div class="container">
 				<h3 class="h_about">About</h3>	
 			</div>
@@ -203,7 +202,7 @@
 			</div>
 			<div class="footer-copyright grey darken-4">
 					<div class="container grey-text text-lighten-2">
-						<div class="row">
+						<div class="row" style="margin: 0">
 							<div class="col s6 m6 l6 xl6">&copy; 2017 Danish Shah. All Rights Reserved.</div>
 							<div id="count_div" class="col s6 m6 l6 xl6"></div>
 						</div>
@@ -248,6 +247,8 @@
 
 			ele.innerHTML += count + " Visitors";
 		}
+
+
 	</script>
 </body>
 </html>

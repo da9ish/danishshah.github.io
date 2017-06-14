@@ -114,3 +114,19 @@ nav ul li a.active{
 .s_links{
 	margin-right: 16px;
 }
+
+.card{
+	margin: 0;
+}
+
+.card.horizontal .card-image{
+	max-width: 60%;
+	/*max-height: 90vh;*/
+}
+
+.modal{
+	top: 20%;
+	width: 90%;
+	max-height: 90%;
+	height: auto;
+}
