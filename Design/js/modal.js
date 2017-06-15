@@ -11,7 +11,7 @@ function openModal(div){
 	// console.log(div);
 	var image = div.getElementsByClassName('design')[0];
 	var img = image.getAttribute("src");
-	// console.log(img);
+	console.log(img);
 	$('#modal1').modal('open');
 
 	var mod_img_1 = document.getElementById('modal_img_2');
@@ -20,7 +20,10 @@ function openModal(div){
 	mod_img_1.setAttribute('src', img);
 	mod_img_2.setAttribute('src', img);
 
-	var down_link = document.getElementById('download');
-	down_link.href = img;
+	var down_link_1 = document.getElementById('download1');
+	var down_link_2 = document.getElementById('download2	');
+	down_link_1.href = img;
+	down_link_2.href = img;
+
 }
 
