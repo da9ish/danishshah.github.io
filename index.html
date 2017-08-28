@@ -6,249 +6,277 @@
   	<meta name="theme-color" content="#121212" />
   	<link rel="manifest" href="/manifest.json">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 	<link rel="icon" href="images/logo.png">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>	
 	<link rel="stylesheet" type="text/css" href="css/main.css">	
 	<link href="https://fonts.googleapis.com/css?family=Lato:500,700|Oswald" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700" rel="stylesheet">
 </head>
-<body onload="getVisitorCount()">
+<body>
 
-	<div id="main">
 
-		<div class="col s12 landing_div">
-			<img class="responsive-img landing hide-on-med-and-down" src="images/landing_main.jpg">
-			<img class="responsive-img landing hide-on-small-and-up" src="images/landing_mob.jpg">
+	<section id="loader">
+		<h5 class="loader-head">Music helps me think.</h5>
+		<div id="bars">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
 		</div>
+	</section>
 
-		<div class="navbar-fixed">
+	<section id="main-content">
 
-			<nav id="nav" class="transparent z-depth-0">
-				<div class="nav_wrapper container">
-					<a href="index.html"><img class="logo_nav" src="images/logo_nav.png"/></a>
-					<a href="index.html" class="brand-logo grey-text text-darken-4">Danish Shah</a>
+		<section id="landing" class="scrollspy">
 
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li class="active"><a href="index.html" class="grey-text text-darken-4 bold active"><p style="margin: 0;">HOME</p></a></li>
-						<li><a href="./Project/index.html" class="grey-text text-darken-4 bold">PROJECTS</a></li>
-						<li><a href="./App/index.html" class="grey-text text-darken-4 bold">APPS</a></li>
-						<li><a href="./Design/index.html" class="grey-text text-darken-4 bold">DESIGNS</a></li>
-					</ul>
-	  				<a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons grey-text text-darken-4">menu</i></a>
+			<!-- <div class="anim hide-on-med-and-down">
+				<div class="purple-top"></div>
+				<div class="purple-bottom"></div>
 
-				</div>
-			</nav>
+				<div class="yellow-top"></div>
+				<div class="yellow-bottom"></div>
+			</div> -->
 
-		</div>
+			<div class="navbar-fixed">
 
-		<ul id="mobile" class="side-nav">
-			<li><div class="center"><img class="responsive-img" src="images/logo_nav.png"></div></li>
-			<li class="active"><a href="./index.html" class="grey-text text-darken-4 bold">HOME</a></li>
-			<li><a href="./Project/index.html" class="grey-text text-darken-4 bold">PROJECTS</a></li>
-			<li><a href="./App/index.html" class="grey-text text-darken-4 bold">APPS</a></li>
-			<li><a href="./Design/index.html" class="grey-text text-darken-4 bold">DESIGNS</a></li>
-		</ul>
+				<nav class="transparent z-depth-0">
+					<div class="nav-wrapper container nav-card z-depth-1 hide-on-small-only">
+						<a href="#landing" class="brand-logo brush nav-logo-title left">Danish Shah</a>			
 
-
-		<div id="land" class="row land valign-wrapper">
-			<div class="col xl6 l6 m12 s12 right center-align center">
-				<center>
-				<p class="name flow-text">Danish Shah</p>
-				<div class="divider"></div>
-				<p class="qualification flow-text">Developer &bull; Designer</p>
-				</center>
-			</div>
-		</div>
-
-		<div class="col l12 s12 m12 xl12 center grey bottom lighten-3 about">
-			<div class="container">
-				<h3 class="h_about">About</h3>	
-			</div>
-		</div>	
-
-		<div class="row grey lighten-4 pic_container" style="margin-bottom: 0">
-			<div class="container">
-				
-				<div class="col l6 s12 m12 xl6">
-					<img class="responsive-img prof_pic" src="images/prof.jpg">
-				</div>
-
-				<div class="col l6 s12 m12 xl6">					
-					<p class="b_about flow-text">Hello World!<br>I am Danish Shah, a 20 yead old young passionate developer and graphics designer. Born and grown-up in Mumbai, India. I am a full-stack Web and Android Developer. Also a 2D and 3D Graphic Designer.</p>
-				</div>
-				
-			</div>
-		</div>
-
-		<div class="col l12 s12 m12 xl12 center grey bottom lighten-3">
-			<div class="container">
-				<h3 class="h_about">Recent Design's</h3>
-				
-			</div>
-		</div>
-
-		<div class="row grey lighten-4 pic_container valign-wrapper" style="margin-bottom: 0">
-			<div class="container">
-
-				<div class="col s12 m12 l6 xl6" style="padding: 0px">
-					<img class="responsive-img display_img" style="margin-bottom: -6px" src="images/logo_earth_view.jpg">	
-
-					<img class="responsive-img display_img" style="margin-bottom: -6px" src="images/cartoon_1.jpg">
-				</div>
-				
-				<div class="col s12 m12 l6 xl6" style="padding: 0px"	>
-					<img class="responsive-img display_img" style="margin-bottom: -6px" src="images/master_piece.jpg">		
-		
-					<img class="responsive-img display_img" style="margin-bottom: -6px" src="images/hulk.jpg">
-
-					<img class="responsive-img display_img" style="margin-bottom: -6px" src="images/4k.jpg">
-				</div>
-
-				
-				<div class="row"></div>
-
-				<div class="row center">					
-
-					<a class="grey darken-4 waves-effect waves-light btn" href="Design/index.html">View All</a>
-
-				</div>
-
-			</div>
-		
-		</div>
-
-		<div class="col l12 s12 m12 xl12 center grey bottom lighten-3">
-			<div class="container">
-				<h3 class="h_about">Recent Project's</h3>
-			</div>
-		</div>
-
-		<div class="row grey lighten-4 pic_container valign-wrapper" style="margin-bottom: 0">
-			<div class="container">
-				<div class="row" style="display: flex; flex-wrap: wrap; justify-content: space-around;">
-					<div class="col l5 s12 m12 card horizontal small" style="margin-left: 0">
-
-						<div class="card-image valign-wrapper">
-							<img class="responsive-img" style="height: auto" src="images/novum.png">
-						</div>
-
-						<div class="card-stacked">
-							<div class="card-content">
-								<h5>Novum</h5>
-								<p>An Adaptive User Interface.<p>
-							</div>
-
-							<div class="card-action">
-								<a class="grey-text text-darken-2" href="Novum/index.html">VIEW</a>
-							</div>
-						</div>
-						
-					</div>
-
-					<div class="col l5 s12 m12 card horizontal small" style="margin-left: 0">
-
-						<div class="card-image valign-wrapper">
-							<img class="responsive-img" style="height: auto" src="images/deep_diagnosis_logo.png">
-						</div>
-
-						<div class="card-stacked">
-							<div class="card-content">
-								<h5>DeepDiagnosis</h5>
-								<p>Skin lesion classification using deep learning.<p>
-							</div>
-
-							<div class="card-action">
-								<a class="grey-text text-darken-2" href="https://github.com/DanishShah/DeepDiagnosis">VIEW ON GITHUB</a>
-							</div>
-						</div>
-						
-					</div>
-
-				</div>
-
-				<div class="row"></div>
-
-				<div class="row center">					
-					<a class="grey darken-4 waves-effect waves-light btn" href="Project/index.html">View All</a>
-				</div>
-
-
-			</div>
-		
-		</div>
-
-		<footer class="page-footer grey darken-3">
-			<div class="container">
-				<div class="row">
-					<div class="col l6 s12">
-		                <p class="grey-text text-lighten-2">Website developed and maintained by-</p>
-		                <h5 class="white-text">Danish Shah</h5>
-					</div>
-					<div class="col l6 offset-12 s12">
-						<h5 class="white-text">Social Links:</h5>
-						<ul>
-							<li class="valign-wrapper"><img class="s_links" src="images/facebook-box.png"><a target="_blank" href="https://www.facebook.com/danish.shah.9047">Facebook</a></li>
-							<li class="valign-wrapper"><img class="s_links" src="images/linkedin-box.png"><a target="_blank" href="https://www.linkedin.com/in/da9ish/">LinkedIn</a></li>
-							<li class="valign-wrapper"><img class="s_links" src="images/github-face.png"><a target="_blank" href="https://github.com/DanishShah">GitHub</a></li>
-							<li class="valign-wrapper"><img class="s_links" src="images/google-plus.png"><a target="_blank" href="https://plus.google.com/u/0/+DanishShahAndroidAppDeveloper">Google+</a></li>
-							<li class="valign-wrapper"><img class="s_links" src="images/instagram.png"><a target="_blank" href="https://www.instagram.com/da9ish_shah/">Instagram</a></li>
-
+						<ul id="nav-mobile" class="right hide-on-small-only">
+							<li class="active-r"><a href="#landing" class="nav-element waves-effect waves-yellow">HOME</a></li>
+							<li><a href="project.html" class="nav-element waves-effect waves-yellow">PROJECTS</a></li>
+							<li><a href="app.html" class="nav-element waves-effect waves-yellow">APPS</a></li>
+							<li><a href="design.html" class="nav-element waves-effect waves-yellow">DESIGNS</a></li>
 						</ul>
 					</div>
-				</div>
-				
+
+					<div class="nav-wrapper nav-card z-depth-1 hide-on-med-and-up">
+						<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons nav-logo-title">menu</i></a>
+						<a href="#" class="brand-logo brush nav-logo-title">Danish Shah</a>			
+
+						<ul id="mobile-nav" class="side-nav center">
+							<h1 class="brush nav-logo-title center-align">Danish Shah</h1>
+
+							<li class="active-s"><a href="#landing" class="nav-element-s waves-effect waves-yellow">HOME</a></li>
+							<li><a href="project.html" class="nav-element-s waves-effect waves-yellow">PROJECTS</a></li>
+							<li><a href="app.html" class="nav-element-s waves-effect waves-yellow">APPS</a></li>
+							<li><a href="design.html" class="nav-element-s waves-effect waves-yellow">DESIGNS</a></li>
+						</ul>
+
+					</div>
+				</nav>
+
 			</div>
-			<div class="footer-copyright grey darken-4">
-					<div class="container grey-text text-lighten-2">
-						<div class="row" style="margin: 0">
-							<div class="col s6 m6 l6 xl6">&copy; 2017 Danish Shah. All Rights Reserved.</div>
-							<div id="count_div" class="col s6 m6 l6 xl6"></div>
+
+			<div class="container center valign-wrapper landing row">
+				<div class="col s12 m8 l6 offset-l3 offset-m2">
+				<h1 class="brush name">Danish Shah</h1>
+				<h1 class="brush">I make stuff</h1>
+				</div>
+			</div>
+			
+		
+		</section>
+
+		<section id="about" class="valign-wrapper"> 
+			<div class="container">
+				<div class="hide-on-small-only">
+					<div class="row">
+						<h3 class="col s12 center-align brush about-me-title">About Me</h3>
+					</div>
+					
+					<div class="row valign-wrapper ">
+						<div class="col s12 m4 l3 offset-l1">
+							<img class="prof-pic z-depth-1 responsive-img" src="assets/me.png">
+						</div>
+
+						<div class="col s12 m8 l6 offset-l1">
+							<h5 class="left-align about-me-desc"><q>Hello World! My name is Danish Shah. I am a young and passionate Developer and Graphic Designer. I was born and brought up in Mumbai, India.</q>
+							<br></h5>
+							<br>
 						</div>
 					</div>
 				</div>
-		</footer>
-	</div>
+
+				<div class="row center hide-on-med-and-up">
+					
+					<h3 class="col s12 brush about-me-title">About Me</h3>
+					<br>
+					<div class="col s10 m3 l3 offset-s1 offset-l1">
+						<img class="prof-pic z-depth-1 responsive-img" src="assets/me.png">
+					</div>
+					<div class="col s12 m8 l5 offset-l1">					
+						<h5 class="left-align about-me-desc"><q>Hello World! My name is Danish Shah. I am a young and passionate Developer and Graphic Designer. I was born and brought up in Mumbai, India.</q></h5>
+					</div>
+					
+				</div>
+
+
+				<div class="row center">
+					<h3 class="brush skills-title">Skills and Expertise</h3>
+
+					<div class="col s12 m6 l4 margin-bot-20">
+						<img class="skills-icon responsive-img" src="assets/web.png">
+						<h5 class="expertise">Web Development</h5>
+					</div>
+
+					<div class="col s12 m6 l4 margin-bot-20">
+						<img class="skills-icon responsive-img" src="assets/android.png">
+						<h5 class="expertise">Android Development</h5>
+					</div>
+
+
+					<div class="col s12 m6 l4 margin-bot-20">
+						<img class="skills-icon responsive-img" src="assets/ui-ux.png">
+						<h5 class="expertise">Ui/UX Designing</h5>
+					</div>				
+
+					<div class="col s12 m6 l4 margin-bot-20">
+						<img class="skills-icon responsive-img" src="assets/brand_logo.png">
+						<h5 class="expertise">Brand Logo</h5>
+					</div>
+
+					<div class="col s12 m6 l4 margin-bot-20">
+						<img class="skills-icon responsive-img" src="assets/design.png">
+						<h5 class="expertise">Designing</h5>
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col s12 m6 l6 margin-bot-10">
+						<p class="expertise">80% JAVA</p>
+						<div class="progress teal accent-1">
+							<div class="determinate indigo accent-3" style="width: 80%"></div>
+						</div>
+					</div>
+
+					<div class="col s12 m6 l6 margin-bot-10">
+						<p class="expertise">60% PHOTOSHOP</p>
+						<div class="progress teal accent-1">
+							<div class="determinate indigo accent-3" style="width: 60%"></div>
+						</div>
+					</div>
+
+					<div class="col s12 m6 l6 margin-bot-10">
+						<p class="expertise">70% HTML5</p>
+						<div class="progress teal accent-1">
+							<div class="determinate indigo accent-3" style="width: 70%"></div>
+						</div>
+					</div>
+
+					<div class="col s12 m6 l6 margin-bot-10">
+						<p class="expertise">80% CSS3</p>
+						<div class="progress teal accent-1">
+							<div class="determinate indigo accent-3" style="width: 80%"></div>
+						</div>
+					</div>
+
+					<div class="col s12 m6 l6 margin-bot-10">
+						<p class="expertise">60% JAVASCRIPT</p>
+						<div class="progress teal accent-1">
+							<div class="determinate indigo accent-3" style="width: 60%"></div>
+						</div>
+					</div>
+
+					<div class="col s12 m6 l6 margin-bot-10">
+						<p class="expertise">50% PHP</p>
+						<div class="progress teal accent-1">
+							<div class="determinate indigo accent-3" style="width: 50%"></div>
+						</div>
+					</div>
+
+					<div class="col s12 m6 l6 margin-bot-10">
+						<p class="expertise">50% PYTHON</p>
+						<div class="progress teal accent-1">
+							<div class="determinate indigo accent-3" style="width: 50%"></div>
+						</div>
+					</div>
+
+					<div class="col s12 m6 l6 margin-bot-10">
+						<p class="expertise">80% C</p>
+						<div class="progress teal accent-1">
+							<div class="determinate indigo accent-3" style="width: 80%"></div>
+						</div>
+					</div>
+
+					<div class="col s12 m6 l6 margin-bot-10">
+						<p class="expertise">70% DATABASE</p>
+						<div class="progress teal accent-1">
+							<div class="determinate indigo accent-3" style="width: 70%"></div>
+						</div>
+					</div>
+
+					<div class="col s12 m6 l6 margin-bot-10">
+						<p class="expertise">90% GIT</p>
+						<div class="progress teal accent-1">
+							<div class="determinate indigo accent-3" style="width: 90%"></div>
+						</div>
+					</div>
+				</div>
+				
+			
+			</div>
+		</section>
+
+		<section id="clients">
+			<div class="container">
+			
+				<h1 class="brush center-align about-me-title margin-top-0">Clients</h1>
+				<div class="row card z-depth-2">
+					
+					<div class="col s12 m4 l4 offset-l2 offset-m2 center">
+						<img class="skills-icon responsive-img" src="assets/surge_logo.png">
+						<h5 class="expertise">Surge</h5>
+					</div>
+
+					<div class="col s12 m4 l4 center">
+						<img class="skills-icon responsive-img" src="assets/kashifsir_logo.png">
+						<h5 class="expertise">Kashif Sir</h5>
+					</div>
+				
+				</div>
+			</div>
+		</section>
+
+		<section id="footer">
+			<footer class="page-footer grey lighten-4">
+				<div class="container center">
+					<h1 class="brush">Danish Shah</h1>
+					<p>All the content of the website was designed by me. If you want to use specific design/content please contact me.</p>
+					<h3 class="brush">Contact</h3>
+					<p>shah.danish.1996@gmail.com</p>
+
+					<a href="https://www.facebook.com/da9ish.shah"><img class="social-icon" src="assets/facebook.png"></a>
+
+					<a href="https://github.com/DanishShah"><img class="social-icon" src="assets/github.png"></a>
+
+					<a href="https://www.linkedin.com/in/da9ish/"><img class="social-icon" src="assets/linkedin.png"></a>
+
+					<a href="https://www.instagram.com/da9ish_shah/"><img class="social-icon" src="assets/instagram.png"></a>
+
+				</div>
+				<div class="footer-copyright">
+					<div class="container center">
+						&copy; 2017 Danish Shah. All Rights Reserved.
+					</div>
+				</div>
+			</footer>
+		</section>
+
+	</section>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  	<script type="text/javascript" src="js/materialize.min.js"></script>	
-  	<script type="text/javascript" src="js/init.js"></script>	  		
-	<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
-	<script type="text/javascript">
-		// Initialize Firebase
-		var config = {
-		apiKey: "AIzaSyCRNnwdcFW-Lu3opOeeyOhNJGPvqVGkQco",
-		authDomain: "danish-shah.firebaseapp.com",
-		databaseURL: "https://danish-shah.firebaseio.com",
-		projectId: "danish-shah",
-		storageBucket: "danish-shah.appspot.com",
-		messagingSenderId: "175763857775"
-		};
-		firebase.initializeApp(config);
-
-		function getVisitorCount(){
-			var count = 0;
-			var database = firebase.database();
-			database.ref('/visitor-count/').once('value').then(function(snapshot){
-				count = snapshot.val().count;
-				addVisitorCount(count);
-			});
-			
-		}
-
-		function addVisitorCount(count) {
-			var ele = document.getElementById('count_div');
-			console.log(count);
-			var database = firebase.database();
-			database.ref('/visitor-count/').set({
-				count: count+1
-			});
-
-			ele.innerHTML += count + " Visitors";
-		}
-
-
-	</script>
+  	<script type="text/javascript" src="js/materialize.min.js"></script>
+  	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
