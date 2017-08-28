@@ -66,6 +66,10 @@ p{
 	margin-bottom: 20px;
 }
 
+.margin-top-0{
+	margin-top: 0;
+}
+
 .vr{
 	height: 100%;
 	width: 3px;
@@ -334,7 +338,7 @@ nav ul.side-nav li.active-s a{
 }
 
 .name{
-	font-size: 7em;
+	/*font-size: 7em;*/
 	color: #651FFF;
 }
 
@@ -355,7 +359,7 @@ nav ul.side-nav li.active-s a{
 }
 
 .about-me-title{
-	font-size: 6em;
+	/*font-size: 6em;*/
 }
 
 .about-me-desc{
@@ -389,7 +393,7 @@ nav ul.side-nav li.active-s a{
 
 .skills-title{
 	margin-top: 0px;
-	font-size: 6em;
+	/*font-size: 6em;*/
 }
 
 /*Clients*/

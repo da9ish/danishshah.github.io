@@ -265,11 +265,11 @@ footer .footer-copyright .container{
 }
 
 @media (max-width: 425px){
-	.grid-tem{
+	/*.grid-tem{
 		width: 30%;
 	}
 
 	.grid-item-width-2{
 		width: 40%;
-	}
+	}*/
 }

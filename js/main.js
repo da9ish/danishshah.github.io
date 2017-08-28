@@ -22,4 +22,4 @@ jQuery(document).ready(function($) {
 $(window).load(function() {
 	$('#loader').hide();
 	$('#main-content').show();
-})
+});

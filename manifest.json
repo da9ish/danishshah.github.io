@@ -1,0 +1,23 @@
+{
+  "short_name": "DanishShah",
+  "name": "Danish Shah",
+  "background-color": "##FFC400",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "250x200"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "250X200"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "250X200"
+    }
+  ],
+  "start_url": "index.html"
+}
