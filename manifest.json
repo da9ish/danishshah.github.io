@@ -2,6 +2,7 @@
   "short_name": "DanishShah",
   "name": "Danish Shah",
   "background-color": "##FFC400",
+  "display": "standalone",
   "icons": [
   {
    "src": "\/assets/favicon/android-icon-36x36.png",
