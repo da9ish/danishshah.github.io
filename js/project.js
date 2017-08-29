@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 
 });
 
-$(window).load(function() {
+$(window).on('load', function() {
 	$('#loader').hide();
 	$('#main-content').show();
 });
