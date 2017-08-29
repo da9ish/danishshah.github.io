@@ -1,8 +1,6 @@
 {
-  "short_name": "DanishShah",
-  "name": "Danish Shah",
-  "background-color": "##FFC400",
-  "icons": [
+ "name": "App",
+ "icons": [
   {
    "src": "\/android-icon-36x36.png",
    "sizes": "36x36",
@@ -39,6 +37,5 @@
    "type": "image\/png",
    "density": "4.0"
   }
- ],
-  "start_url": "index.html"
+ ]
 }
