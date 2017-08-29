@@ -1,8 +1,10 @@
 {
   "short_name": "DanishShah",
   "name": "Danish Shah",
-  "background-color": "##FFC400",
+  "background-color": "#FFC400",
+  "theme-color": "#FFC400",
   "display": "standalone",
+  "orientation": "potrait",
   "icons": [
   {
    "src": "\/assets/favicon/android-icon-36x36.png",
