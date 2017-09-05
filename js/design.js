@@ -23,6 +23,6 @@ jQuery(document).ready(function($) {
 });
 
 $(window).on('load', function() {
-	$('#loader').hide();
-	$('#main-content').show();
+	// $('#loader').hide();
+	// $('#main-content').show();
 });
