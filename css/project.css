@@ -141,7 +141,7 @@ p{
 
 /*Main*/
 #main-content{
-	display: none;
+	display: block;
 }
 
 /*Nav*/
