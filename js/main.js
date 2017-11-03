@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
-	$('#main-content').hide();
+
+	$('#main-content').css("display", "none");
+
 	// Change state of nav bar
 	$(window).scroll(function(event) {
 		if ($(window).scrollTop() > 100 ){
@@ -20,9 +22,8 @@ jQuery(document).ready(function($) {
 });
 
 $(window).on('load', function() {
-	$('#loader').hide();
-	$('#main-content').show();
-
+	$('#loader').css("display", "none");
+	$('#main-content').css("display", "block");
 
 	window.sr = ScrollReveal();
 	sr.reveal('.name', { opacity: 0 });
@@ -34,7 +35,8 @@ $(window).on('load', function() {
 	sr.reveal('#android-gfx', { duration: 800, opacity: 0 }, 50);	
 	sr.reveal('#ui-ux-gfx', { duration: 800, opacity: 0 }, 50);	
 	sr.reveal('#logo-gfx', { duration: 800, opacity: 0 }, 50);	
-	sr.reveal('#design-gfx', { duration: 800, opacity: 0 }, 50);	
+	sr.reveal('#design-gfx', { duration: 800, opacity: 0 }, 50);
+	sr.reveal('#ml-gfx', { duration: 800, opacity: 0 }, 50);	
 
 	sr.reveal('.skills-icon', { duration: 800, opacity: 0 });
 	sr.reveal('.footer-text', { duration: 800, opacity: 0 });

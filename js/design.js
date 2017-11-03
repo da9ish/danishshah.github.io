@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 	
-	$('#main-content').hide();
+	$('#main-content').css("display", "none");
 
 	var $grid = $('.grid').masonry({
 		// set itemSelector so .grid-sizer is not used in layout

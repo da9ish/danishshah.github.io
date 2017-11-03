@@ -81,6 +81,7 @@ p{
 
 /*Loader*/
 #loader{
+	display: block;
 	width: 100%;
 	height: 100vh;
 }
@@ -141,7 +142,7 @@ p{
 
 /*Main*/
 #main-content{
-	display: block;
+	display: none;
 }
 
 /*Nav*/
@@ -208,10 +209,20 @@ nav ul.side-nav li.active-s a{
 	height: 80vh;
 }
 
+.landing .row{
+	width: inherit;
+}
+
 .project_display_laptop{	
-	transform: translateX(-10%);
-	transition: transform;
-	transition-duration: 1s;
+	/*transform: translateX(-10%);*/
+	/*transition: transform;*/
+	/*transition-duration: 1s;*/
+}
+
+.project_display_laptop_r{	
+	/*transform: translateX(10%);*/
+	/*transition: transform;*/
+	/*transition-duration: 1s;*/
 }
 
 .project_display_mob{
