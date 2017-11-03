@@ -343,6 +343,16 @@ nav ul.side-nav li.active-s a{
 	color: #651FFF;
 }
 
+#cv-text{
+	color: #555;
+    font-size: 1em;
+    font-weight: 800;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;	
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
 /*About*/
 
 #about{
