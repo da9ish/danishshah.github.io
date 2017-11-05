@@ -1,6 +1,12 @@
 jQuery(document).ready(function($) {
 
-	$('#main-content').css("display", "none");
+	if($('#main-content').css("display") == "none"){
+		$('#main-content').css("display", "block");
+	}else{
+		$('#main-content').css("display", "none");
+	}
+
+	
 	console.log("Ready");
 
 	// Change state of nav bar

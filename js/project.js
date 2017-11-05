@@ -1,6 +1,10 @@
 jQuery(document).ready(function($) {
 	
-	$('#main-content').css("display", "none");
+	if($('#main-content').css("display") == "none"){
+		$('#main-content').css("display", "block");
+	}else{
+		$('#main-content').css("display", "none");
+	}
 
 	$(".button-collapse").sideNav({
 		closeOnClick: true,
