@@ -8,9 +8,6 @@ jQuery(document).ready(function($) {
 		console.log("Ready, Block");
 	}
 
-	
-	console.log("Ready");
-
 	// Change state of nav bar
 	$(window).scroll(function(event) {
 		if ($(window).scrollTop() > 100 ){
