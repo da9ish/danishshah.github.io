@@ -1,9 +1,11 @@
 jQuery(document).ready(function($) {
 
 	if($('#main-content').css("display") == "none"){
+		console.log("Ready, None");
 		$('#main-content').css("display", "block");
 	}else{
 		$('#main-content').css("display", "none");
+		console.log("Ready, Block");
 	}
 
 	
