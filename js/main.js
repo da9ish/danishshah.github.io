@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
 
 	$('#main-content').css("display", "none");
+	console.log("Ready");
 
 	// Change state of nav bar
 	$(window).scroll(function(event) {
@@ -24,6 +25,8 @@ jQuery(document).ready(function($) {
 $(window).on('load', function() {
 	$('#loader').css("display", "none");
 	$('#main-content').css("display", "block");
+
+	console.log("Load");
 
 	window.sr = ScrollReveal();
 	sr.reveal('.name', { opacity: 0 });
