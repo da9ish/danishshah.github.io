@@ -146,7 +146,11 @@ p{
 .bar:nth-child(10) { left: 37px; animation-duration: 442ms; }​
 
 /*Main*/
-#main-content{
+article.main-content, aside.main-content, details.main-content, figcaption.main-content, figure.main-content, footer.main-content, header.main-content, hgroup.main-content, main.main-content, menu.main-content, nav.main-content, section.main-content, summary.main-content {
+    display: none;
+}
+
+section.main-content, article.main-content{
 	display: none;
 }
 
@@ -343,7 +347,7 @@ nav ul.side-nav li.active-s a{
 	color: #651FFF;
 }
 
-#cv-text{
+.cv-text{
 	color: #555;
     font-size: 1em;
     font-weight: 800;

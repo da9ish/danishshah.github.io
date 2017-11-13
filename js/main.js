@@ -27,7 +27,7 @@ $(window).on('load', function() {
 
 	window.sr = ScrollReveal();
 	sr.reveal('.name', { opacity: 0 });
-	sr.reveal('.name_sub' , { opacity: 0 });
+	// sr.reveal('.name_sub' , { opacity: 0 });
 	sr.reveal('#cv-text' , { opacity: 0 });
 
 	sr.reveal('.prof-pic', { duration: 800, opacity: 0 });
