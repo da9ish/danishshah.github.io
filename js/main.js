@@ -27,8 +27,8 @@ $(window).on('load', function() {
 
 	window.sr = ScrollReveal();
 	sr.reveal('.name', { opacity: 0 });
-	// sr.reveal('.name_sub' , { opacity: 0 });
-	sr.reveal('#cv-text' , { opacity: 0 });
+	sr.reveal('.name_sub' , { opacity: 0 });
+	sr.reveal('.cv-text' , { opacity: 0 });
 
 	sr.reveal('.prof-pic', { duration: 800, opacity: 0 });
 
@@ -40,8 +40,8 @@ $(window).on('load', function() {
 	sr.reveal('#ml-gfx', { duration: 800, opacity: 0 }, 50);	
 
 	sr.reveal('.skills-icon', { duration: 800, opacity: 0 });
-	sr.reveal('.footer-text', { duration: 800, opacity: 0 });
-	sr.reveal('.social-icon', { duration: 800, opacity: 0 });
+	// sr.reveal('.footer-text', { duration: 800, opacity: 0 });
+	// sr.reveal('.social-icon', { duration: 800, opacity: 0 });
 
 });
 
