@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 14400 14400" overflow="scroll" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 4961 3508" enable-background="new 0 0 4961 3508" xml:space="preserve">
 <g id="Layer_1">
-	<rect x="4719.5" y="5445.5" fill="#FFFFFF" width="4961" height="3508"/>
+	<rect x="1782.1" y="1260.2" fill="#FFFFFF" width="1396.8" height="987.7"/>
 	
-		<image display="none" width="4961" height="3508" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAE2EAAA20CAIAAABdVBZiAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+		<image display="none" overflow="visible" width="4961" height="3508" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAE2EAAA20CAIAAABdVBZiAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAABk9dJREFUeNrs3UFuGzmfxmF9N5mbiJeY81QdYk4yBzB7Ye6zGyQbCtQ2
 BoIYcWPkxYzShQ78Re1EtlQqkvU8CwIxkFj+x9sXv3/93/+EDQAAAADQkfzxP/77v/4z78Pjx2+u
 AQAAAAAAAAAA0Kt/2YgCAAAAQG++ftg8f8kl7Pbh7n44PDz/78Pz4fPh+LoNAAAAAAAAAABAN2xE
@@ -1820,15 +1820,15 @@ AABo1s+N6NuIaMzziCgAAAAAAAAAAAAAAAAAAK36uRF9GxEdRu8CAAAAAAAAAAAAAAAAANCyD43o
 24homuYdUQAAAAAAAAAAAAAAAAAAGvahEX0+zXWoQBQAAAAAAAAAAAAAAAAAoHn/NKIvPwLRNHkR
 AAAAAAAAAAAAAAAAAID2/fb/X59PIf3lOQAAAAAAAAAAAAAAAAAAuvBjR/T1aV4QjdlzAAAAAAAA
 AAAAAAAAAAB04Ucj+vsfAlEAAAAAAAAAAAAAAAAAgI78K/z7P+HPvz0EAAAAAAAAAAAAAAAAAEBH
-/gfXzwuMnaeVWQAAAABJRU5ErkJggg==" transform="matrix(1 0 0 1 4719.5 5445.5)">
+/gfXzwuMnaeVWQAAAABJRU5ErkJggg==">
 	</image>
 </g>
 <g id="Layer_2">
-	<polygon fill="#FFC400" points="4719.5,5445.5 4719.5,8953.5 7370.8,5445.5 	"/>
-	<polygon fill="#FFD740" points="4719.5,8953.5 6423,5445.5 4719.5,5445.5 	"/>
+	<polygon fill="#FFC400" points="1782.1,1260.2 1782.1,2247.8 2528.6,1260.2 	"/>
+	<polygon fill="#FFD740" points="1782.1,2247.8 2261.7,1260.2 1782.1,1260.2 	"/>
 </g>
 <g id="Layer_3">
-	<polygon fill="#7C4DFF" points="9680.5,6812.9 6423,5445.5 9680.5,5445.5 	"/>
-	<polygon fill="#6200EA" points="9680.5,6177.1 6423.8,5445.5 9680.5,5445.5 	"/>
+	<polygon fill="#7C4DFF" points="3178.9,1645.2 2261.7,1260.2 3178.9,1260.2 	"/>
+	<polygon fill="#6200EA" points="3178.9,1466.1 2261.9,1260.2 3178.9,1260.2 	"/>
 </g>
 </svg>
