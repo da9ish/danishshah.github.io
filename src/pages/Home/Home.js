@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import './Home.css';
 import { FadeInUpBox } from "../../ui/atoms/fade-in-up-box";
@@ -40,7 +40,6 @@ const HomePage = styled.div`
 `
 
 const Home = () => {
-  const ref = useRef()
   const [mouseX, setMouseX] = useState(null)
   const [mouseY, setMouseY] = useState(null)
   const designAssets = [
@@ -69,45 +68,6 @@ const Home = () => {
       zIndex: 11,
     }
   ]
-
-  // useEffect(() => {
-  //   const positions = ref.current.getAttribute('data-text').split(',')
-  //   console.log(typeof positions, positions);
-  //   typing(0, positions);
-  // }, [])
-
-  // const typing = (index, text) => {
-  //   var textIndex = 1;
-
-  //   var tmp = setInterval(function () {
-  //     if (textIndex < text[index].length + 1) {
-  //       ref.current.innerText = text[index].substr(0, textIndex);
-  //       textIndex++;
-  //     } else {
-  //       if (index < 2) setTimeout(function () { deleting(index, text) }, 2000);
-  //       clearInterval(tmp);
-  //     }
-
-  //   }, 150);
-  // }
-
-  // const deleting = (index, text) => {
-
-  //   var textIndex = text[index].length;
-
-  //   var tmp = setInterval(function () {
-
-  //     if (textIndex + 1 > 0) {
-  //       ref.current.innerText = text[index].substr(0, textIndex);
-  //       textIndex--;
-  //     } else {
-  //       index++;
-  //       if (index <= 2) typing(index, text);
-  //       clearInterval(tmp);
-  //     }
-
-  //   }, 150)
-  // }
 
   return (
     <HomePage onMouseMove={(e) => {
