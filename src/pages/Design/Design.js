@@ -53,19 +53,19 @@ const Design = () => {
         <DesignList>
           <div className='w-full relative flex-col justify-center'>
             <div className='text-xl font-medium pb-2'>The Low Poly Project (Coming Soon)</div>
-            <img className='w-full' src={LowPoly} />
+            <img className='w-full' alt='LowPoly' src={LowPoly} />
           </div>
           <div className='w-full relative flex-col justify-center'>
             <div className='text-xl font-medium pb-2'>Branding (Coming Soon)</div>
-            <img className='w-full' src={Branding} />
+            <img className='w-full' alt='Branding' src={Branding} />
           </div>
           <div className='w-full relative flex-col justify-center'>
             <div className='text-xl font-medium pb-2'>UI/UX Design (Coming Soon)</div>
-            <img className='w-full' src={UiUx} />
+            <img className='w-full' alt='UI/UX' src={UiUx} />
           </div>
           <div className='w-full relative flex-col justify-center'>
             <div className='text-xl font-medium pb-2'>Icon Packs (Coming Soon)</div>
-            <img className='w-full' src={IconPack} />
+            <img className='w-full' alt='Icon Pack' src={IconPack} />
           </div>
         </DesignList>
       </FadeInUpBox>
