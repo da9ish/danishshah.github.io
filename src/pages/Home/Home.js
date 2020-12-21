@@ -24,6 +24,15 @@ const DesignAsset = styled(motion.div)`
   z-index: ${props => props.design.zIndex};
 `
 
+const OutlineHeading = styled.h4`
+  font-size: 36px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+`
+
 const Home = () => {
   const [mouseX, setMouseX] = useState(null)
   const [mouseY, setMouseY] = useState(null)
@@ -64,7 +73,7 @@ const Home = () => {
           <h1 className="text-7xl font-bold my-4">Danish Shah</h1>
         </FadeInUpBox>
         <FadeInUpBox yOffset={64} duration={1.2}>
-          <h4 className="home-subtitle">I am a designer and full-stack developer</h4>
+          <OutlineHeading className="home-subtitle">I am a designer and full-stack developer</OutlineHeading>
         </FadeInUpBox>
         <FadeInUpBox yOffset={64} duration={1.4}>
           <p className='my-4 text-gray-300'>Hello. I’m a designer who codes. I strive to create simple, original, and impactful user experiences. I’m able to take ideas from concept to wireframe to prototype to production.</p>
