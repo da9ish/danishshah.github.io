@@ -1,19 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import './Design.css';
 import { FadeInUpBox } from "../../ui/atoms/fade-in-up-box";
 import LowPoly from '../../assets/images/low-poly.png'
 import Branding from '../../assets/images/branding.png'
 import IconPack from '../../assets/images/icon-pack.png'
 import UiUx from '../../assets/images/ui-ux.png'
-
-const DesignPage = styled.div`
-  width: 100%;
-  height: 100vh;
-  grid-column: 2 / span 9;
-  display: flex;
-  align-items: center;
-`
 
 const DesignList = styled.div`
   width: 100%;
@@ -43,56 +34,42 @@ const DesignList = styled.div`
   }
 `
 
-const DesignItem = styled.div`
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* border: 1px solid white; */
-  transition-duration: .3s;
-  transition-timing-function: ease-in;
-`
-
-const DesignTitle = styled.h4`
-  width: fit-content;
-  margin-top: 22px;
+const OutlineHeading = styled.h1`
+  font-size: 72px;
   margin-bottom: 8px;
-  font-size: 18px;
-`
-const DesignThumb = styled.img`
-  width: 100%;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 `
 
 const Design = () => {
   return (
-    <DesignPage>
-      <div className="design-title-content">
-        <FadeInUpBox yOffset={64} duration={1}>
-          <h1 className="design-title">Design</h1>
-        </FadeInUpBox>
-        <FadeInUpBox>
-          <DesignList>
-            <DesignItem>
-              <DesignTitle>The Low Poly Project (Coming Soon)</DesignTitle>
-              <DesignThumb src={LowPoly} />
-            </DesignItem>
-            <DesignItem>
-              <DesignTitle>Branding (Coming Soon)</DesignTitle>
-              <DesignThumb src={Branding} />
-            </DesignItem>
-            <DesignItem>
-              <DesignTitle>UI/UX Design (Coming Soon)</DesignTitle>
-              <DesignThumb src={UiUx} />
-            </DesignItem>
-            <DesignItem>
-              <DesignTitle>Icon Packs (Coming Soon)</DesignTitle>
-              <DesignThumb src={IconPack} />
-            </DesignItem>
-          </DesignList>
-        </FadeInUpBox>
-      </div>
-    </DesignPage>
+    <div className='px-48 grid grid-cols-1 gap-2 w-full h-screen'>
+      <FadeInUpBox yOffset={64} duration={1} className='flex items-end'>
+        <OutlineHeading>Design</OutlineHeading>
+      </FadeInUpBox>
+      <FadeInUpBox>
+        <DesignList>
+          <div className='w-full relative flex-col justify-center'>
+            <div className='text-xl font-medium pb-2'>The Low Poly Project (Coming Soon)</div>
+            <img className='w-full' src={LowPoly} />
+          </div>
+          <div className='w-full relative flex-col justify-center'>
+            <div className='text-xl font-medium pb-2'>Branding (Coming Soon)</div>
+            <img className='w-full' src={Branding} />
+          </div>
+          <div className='w-full relative flex-col justify-center'>
+            <div className='text-xl font-medium pb-2'>UI/UX Design (Coming Soon)</div>
+            <img className='w-full' src={UiUx} />
+          </div>
+          <div className='w-full relative flex-col justify-center'>
+            <div className='text-xl font-medium pb-2'>Icon Packs (Coming Soon)</div>
+            <img className='w-full' src={IconPack} />
+          </div>
+        </DesignList>
+      </FadeInUpBox>
+    </div>
   )
 }
 

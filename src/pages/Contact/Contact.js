@@ -1,28 +1,27 @@
 import React from "react";
 import styled from "styled-components";
-import './Contact.css';
 import { FadeInUpBox } from "../../ui/atoms/fade-in-up-box";
 
-const ContactPage = styled.div`
-  width: 100%;
-  height: 100vh;
-  grid-column: 2 / span 9;
-  display: flex;
-  align-items: center;
+
+const OutlineHeading = styled.h1`
+  font-size: 72px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 `
 
 const Contact = () => {
   return (
-    <ContactPage>
-      <div className="contact-title-content">
-        <FadeInUpBox yOffset={64} duration={1}>
-          <h1 className="contact-title">Contact</h1>
-        </FadeInUpBox>
-        <FadeInUpBox>
-          <p>If you'd like to talk, just send me an email at <a className="email-link" href="mailto:hi@danish.codes"><b>hi@danish.codes</b></a></p>
-        </FadeInUpBox>
-      </div>
-    </ContactPage>
+    <div className='px-48 grid grid-cols-1 gap-2 w-full h-screen'>
+      <FadeInUpBox yOffset={64} duration={1} className='flex items-end'>
+        <OutlineHeading>Contact</OutlineHeading>
+      </FadeInUpBox>
+      <FadeInUpBox>
+        <p>If you'd like to talk, just send me an email at <a className="hover:underline transition-all" href="mailto:hi@danish.codes"><b>hi@danish.codes</b></a></p>
+      </FadeInUpBox>
+    </div>
   )
 }
 
