@@ -35,8 +35,7 @@ const DesignList = styled.div`
 `
 
 const OutlineHeading = styled.h1`
-  font-size: 72px;
-  margin-bottom: 8px;
+  margin-bottom: 32px;
   font-weight: bold;
   color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -45,9 +44,9 @@ const OutlineHeading = styled.h1`
 
 const Design = () => {
   return (
-    <div className='px-48 grid grid-cols-1 gap-2 w-full h-screen'>
+    <div className='px-4 lg:px-48 grid grid-cols-1 gap-2 w-full h-screen'>
       <FadeInUpBox yOffset={64} duration={1} className='flex items-end'>
-        <OutlineHeading>Design</OutlineHeading>
+        <OutlineHeading className='text-5xl lg:text-7xl'>Design</OutlineHeading>
       </FadeInUpBox>
       <FadeInUpBox>
         <DesignList>

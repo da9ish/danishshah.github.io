@@ -12,7 +12,7 @@ import Contact from './pages/Contact/Contact';
 function App() {
 
   return (
-    <div className='w-full h-screen overflow-hidden flex bg-main' style={{ backgroundImage: `url(${Bg})` }}>
+    <div className='w-full h-screen lg:overflow-hidden flex flex-col lg:flex-row bg-main' style={{ backgroundImage: `url(${Bg})` }}>
       <BrowserRouter>
         <Navbar />
         <Routes>

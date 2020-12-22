@@ -9,10 +9,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
-      sm: '480px',
+      sm: '640px',
       md: '768px',
-      lg: '976px',
-      xl: '1440px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px'
     },
     colors: {
       primary: {
@@ -39,6 +40,7 @@ module.exports = {
       spacing: {
         128: '32rem',
         144: '36rem',
+        '56-px': '56px'
       },
       borderRadius: {
         '4xl': '2rem',

@@ -25,7 +25,6 @@ const DesignAsset = styled(motion.div)`
 `
 
 const OutlineHeading = styled.h4`
-  font-size: 36px;
   margin-bottom: 8px;
   font-weight: bold;
   color: transparent;
@@ -64,36 +63,36 @@ const Home = () => {
   ]
 
   return (
-    <div className="px-32 grid grid-cols-2 gap-16 w-full h-screen" onMouseMove={(e) => {
+    <div className="px-4 lg:px-32 grid lg:grid-cols-2 sm:grid-cols-1 lg:gap-16 sm:gap-2 w-full h-full lg:h-screen" onMouseMove={(e) => {
       setMouseX(e.clientX)
       setMouseY(e.clientY)
     }}>
       <div className='flex flex-col justify-center'>
         <FadeInUpBox yOffset={64} duration={1}>
-          <h1 className="text-7xl font-bold my-4">Danish Shah</h1>
+          <h1 className="text-6xl lg:text-7xl font-bold my-4">Danish Shah</h1>
         </FadeInUpBox>
         <FadeInUpBox yOffset={64} duration={1.2}>
-          <OutlineHeading className="home-subtitle">I am a designer and full-stack developer</OutlineHeading>
+          <OutlineHeading className="home-subtitle leading-16 text-4xl lg:text-4xl">I am a designer and full-stack developer</OutlineHeading>
         </FadeInUpBox>
         <FadeInUpBox yOffset={64} duration={1.4}>
           <p className='my-4 text-gray-300'>Hello. I’m a designer who codes. I strive to create simple, original, and impactful user experiences. I’m able to take ideas from concept to wireframe to prototype to production.</p>
           <p className='my-4 text-gray-300'>I do Brand Identity Design and UI/UX design. I also do illustration and 3D designs for fun. I am a self taught designer, unlike others I created my own processes around these things but also made sure that I follow the standards that delivers the best outcomes.</p>
           <p className='my-4 text-gray-300'>As a full stack developer, I work on products that scale and deliver the best user experience. I have experience shipping products built on techstack like Ruby on Rails, GraphQL and React. When is comes to development I focus on delivering UX while maintaining DevX.</p>
           <h5 className="text-sm font-regular text-gray-400">Tools & Technologies</h5>
-          <div className='w-4/5 pl-4 flex'>
-            <img className='my-4 mr-16' title="React" src={ReactLogo} alt="react" />
-            <img className='my-4 mr-16' title="Rails" src={Rails} alt="ruby-on-rails" />
-            <img className='my-4 mr-16' title="GraphQL" src={GraphQL} alt="grqphql" />
+          <div className='w-full lg:w-4/5 flex justify-around'>
+            <img className='my-4' title="React" src={ReactLogo} alt="react" />
+            <img className='my-4' title="Rails" src={Rails} alt="ruby-on-rails" />
+            <img className='my-4' title="GraphQL" src={GraphQL} alt="grqphql" />
           </div>
           <h5 className="text-sm font-regular text-gray-400">Design Tools</h5>
-          <div className='w-4/5 pl-4 flex'>
-            <img className='my-4 mr-16' title="Figma" src={Figma} alt="figma" />
-            <img className='my-4 mr-16' title="Illustrator" src={Illustrator} alt="illustrator" />
-            <img className='my-4 mr-16' title="Photoshop" src={Photoshop} alt="photoshop" />
+          <div className='w-full lg:w-4/5 flex justify-around'>
+            <img className='my-4' title="Figma" src={Figma} alt="figma" />
+            <img className='my-4' title="Illustrator" src={Illustrator} alt="illustrator" />
+            <img className='my-4' title="Photoshop" src={Photoshop} alt="photoshop" />
           </div>
         </FadeInUpBox>
       </div>
-      <div className="relative">
+      <div className="hidden lg:block relative">
         {designAssets.map((design, idx) => <FadeInUpBox key={design.url} yOffset={64} duration={0.5 * idx}>
           <DesignAsset duration={0.5 * idx} animate={{ x: -mouseX / 50, y: -mouseY / 50, stdDeviation: [0, 5, 0] }} initial={0} design={design} />
         </FadeInUpBox>)}
