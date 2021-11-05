@@ -76,8 +76,8 @@ const Home = () => {
         </FadeInUpBox>
         <FadeInUpBox yOffset={64} duration={1.4}>
           <p className='my-4 text-gray-300'>Hello. I’m a designer who codes. I strive to create simple, original, and impactful user experiences. I’m able to take ideas from concept to wireframe to prototype to production.</p>
-          <p className='my-4 text-gray-300'>I do Brand Identity Design and UI/UX design. I also do illustration and 3D designs for fun. I am a self taught designer, unlike others I created my own processes around these things but also made sure that I follow the standards that delivers the best outcomes.</p>
-          <p className='my-4 text-gray-300'>As a full stack developer, I work on products that scale and deliver the best user experience. I have experience shipping products built on techstack like Ruby on Rails, GraphQL and React. When is comes to development I focus on delivering UX while maintaining DevX.</p>
+          <p className='my-4 text-gray-300'>I do Brand Identity Design and UI/UX design. I also do illustrations and 3D designs for fun. I am a self-taught designer, unlike others, I created my own processes around these things but also made sure that I follow the standards that delivers the best outcomes.</p>
+          <p className='my-4 text-gray-300'>As a full-stack developer, I work on products that scale and deliver the best user experience. I have experience shipping products built on tech-stack like Ruby on Rails, GraphQL, and React. When it comes to development I focus on delivering UX while maintaining DevX.</p>
           <h5 className="text-sm font-regular text-gray-400">Tools & Technologies</h5>
           <div className='w-full lg:w-4/5 flex justify-around'>
             <img className='my-4' title="React" src={ReactLogo} alt="react" />
