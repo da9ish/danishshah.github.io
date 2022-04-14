@@ -53,7 +53,7 @@ const Home = () => {
       zIndex: 9,
     },
     {
-      url: "https://cdn.dribbble.com/users/882543/screenshots/5986839/media/913bebe1493fef1928445b111f95b907.png",
+      url: "https://cdn.dribbble.com/users/882543/screenshots/17060062/media/4867709ea3e04855ec42f24a449f0f43.png",
       top: "600px",
       left: "250px",
       width: "400px",
