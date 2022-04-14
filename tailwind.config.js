@@ -25,6 +25,9 @@ module.exports = {
         75: '#F5F6FA',
         DEFAULT: '#004186',
       },
+      dribbble: '#db6e98',
+      github: '#7cc88b',
+      twitter: '#439cd8',
       gray: colors.gray,
       blue: colors.lightBlue,
       red: colors.rose,
@@ -37,21 +40,25 @@ module.exports = {
       sans: ['Poppins'],
     },
     extend: {
-      spacing: {
-        128: '32rem',
-        144: '36rem',
-        '56-px': '56px'
-      },
       borderRadius: {
         '4xl': '2rem',
       },
       backgroundImage: (theme) => ({
         'home-1': 'url("https://cdn.dribbble.com/users/882543/screenshots/5986839/shot-cropped-1549652615910.png")'
       }),
+      spacing: {
+        128: '32rem',
+        144: '36rem',
+        '56-px': '56px'
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      opacity: ['disabled'],
+      backgroundColor: ['disabled'],
+      pointerEvents: ['disabled']
+    },
   },
   plugins: [],
 }

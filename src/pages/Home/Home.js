@@ -37,25 +37,25 @@ const Home = () => {
   const [mouseY, setMouseY] = useState(null)
   const designAssets = [
     {
-      url: "https://cdn.dribbble.com/users/882543/screenshots/5986839/shot-cropped-1549652615910.png",
-      top: "100px",
-      left: "100px",
+      url: "https://cdn.dribbble.com/users/882543/screenshots/17515297/media/2e1100e01742465df1a4476d10fbb04d.png",
+      top: "250px",
+      left: 0,
       width: "500px",
       height: `${500 / 1.33}px`,
+      zIndex: 13,
+    },
+    {
+      url: "https://cdn.dribbble.com/users/882543/screenshots/18003638/media/2522d62e693de1e7876a7fb7fc6fa7f7.png",
+      top: "100px",
+      left: "300px",
+      width: "400px",
+      height: `${400 / 1.33}px`,
       zIndex: 9,
     },
     {
-      url: "https://cdn.dribbble.com/users/882543/screenshots/4884354/de_ui_dribbble.jpg",
-      top: "550px",
-      left: 0,
-      width: "300px",
-      height: `${300 / 1.33}px`,
-      zIndex: 10,
-    },
-    {
-      url: "https://cdn.dribbble.com/users/882543/screenshots/4827697/shot-cropped-1531651315858.png",
+      url: "https://cdn.dribbble.com/users/882543/screenshots/5986839/media/913bebe1493fef1928445b111f95b907.png",
       top: "600px",
-      left: "350px",
+      left: "250px",
       width: "400px",
       height: `${400 / 1.33}px`,
       zIndex: 11,
@@ -76,7 +76,7 @@ const Home = () => {
         </FadeInUpBox>
         <FadeInUpBox yOffset={64} duration={1.4}>
           <p className='my-4 text-gray-300'>Hello. I’m a designer who codes. I strive to create simple, original, and impactful user experiences. I’m able to take ideas from concept to wireframe to prototype to production.</p>
-          <p className='my-4 text-gray-300'>I do Brand Identity Design and UI/UX design. I also do illustrations and 3D designs for fun. I am a self-taught designer, unlike others, I created my own processes around these things but also made sure that I follow the standards that delivers the best outcomes.</p>
+          <p className='my-4 text-gray-300'>I do Brand Identity Design and UI/UX design. I also do illustrations and 3D designs for fun. I am a self-taught designer, unlike others, I created my own processes around these things but also made sure that I follow the standards that deliver the best outcomes.</p>
           <p className='my-4 text-gray-300'>As a full-stack developer, I work on products that scale and deliver the best user experience. I have experience shipping products built on tech-stack like Ruby on Rails, GraphQL, and React. When it comes to development I focus on delivering UX while maintaining DevX.</p>
           <h5 className="text-sm font-regular text-gray-400">Tools & Technologies</h5>
           <div className='w-full lg:w-4/5 flex justify-around'>
@@ -94,7 +94,7 @@ const Home = () => {
       </div>
       <div className="hidden lg:block relative">
         {designAssets.map((design, idx) => <FadeInUpBox key={design.url} yOffset={64} duration={0.5 * idx}>
-          <DesignAsset duration={0.5 * idx} animate={{ x: -mouseX / 50, y: -mouseY / 50, stdDeviation: [0, 5, 0] }} initial={0} design={design} />
+          <DesignAsset duration={0.5 * idx} whileHover={{ scale: 1.2, zIndex: 15 }} whileTap={{ scale: 0.8, zIndex: 15 }} animate={{ x: -mouseX / 50, y: -mouseY / 50, stdDeviation: [0, 5, 0] }} initial={0} design={design} />
         </FadeInUpBox>)}
       </div>
     </div>

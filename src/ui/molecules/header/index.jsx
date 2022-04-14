@@ -1,7 +1,5 @@
 import React from "react";
-import styled from "styled-components";
 
-import { Box } from "../../atoms/box";
 import { Container } from "../../atoms/container";
 import { Flex } from "../../atoms/flex";
 import { Typography } from "../../atoms/typography";
