@@ -1,196 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description"
-    content="Hello. I’m a designer who codes. I strive to create simple, original, and impactful user experiences. I’m able to take ideas from concept to wireframe to prototype to production.\n
-  I do Brand Identity Design and UI/UX design. I also do illustration and 3D designs for fun. I am a self taught designer, unlike others I created my own processes around these things but also made sure that I follow the standards that delivers the best outcomes.\n
-  As a full stack developer, I work on products that scale and deliver the best user experience. I have experience shipping products built on techstack like Ruby on Rails, GraphQL and React. When is comes to development I focus on delivering UX while maintaining DevX." />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon/logo192.png" />
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-
-  <title>Danish Shah</title>
-  <style>
-    html {
-      cursor: url("data:image/svg+xml,%3Csvg height='8' width='8' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' fill='%2364FFDA' r='2'/%3E%3C/svg%3E") 4 4, auto;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      background-color: #111111;
-      color: #ffffff;
-    }
-
-    code {
-      font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    a,
-    button {
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .cursor {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: var(--width);
-      height: var(--height);
-      transform: translate(calc(var(--x) - var(--width) / 2), calc(var(--y) - var(--height) / 2));
-      transition: 150ms width cubic-bezier(0.39, 0.575, 0.565, 1),
-        150ms height cubic-bezier(0.39, 0.575, 0.565, 1),
-        150ms transform cubic-bezier(0.39, 0.575, 0.565, 1);
-      z-index: var(--zIndex);
-      pointer-events: none;
-      will-change: transform;
-      box-shadow: var(--boxShadow);
-    }
-
-    @media (pointer: fine) {
-      .cursor {
-        display: block;
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#0a0a0a" />
+    
+    <!-- Primary Meta Tags -->
+    <title>da9i.sh | Danish Shah</title>
+    <meta name="title" content="da9i.sh | Danish Shah" />
+    <meta name="description" content="Software Engineer building intelligent systems at the intersection of AI, video, and code. Type 'help' to explore." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://da9i.sh/" />
+    <meta property="og:title" content="da9i.sh | Danish Shah" />
+    <meta property="og:description" content="Software Engineer building intelligent systems at the intersection of AI, video, and code." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://da9i.sh/" />
+    <meta property="twitter:title" content="da9i.sh | Danish Shah" />
+    <meta property="twitter:description" content="Software Engineer building intelligent systems at the intersection of AI, video, and code." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/og-image.png" />
+    <meta name="twitter:creator" content="@da9ish" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <style>
+      /* Critical CSS - prevent FOUC */
+      body {
+        background-color: #0a0a0a;
+        margin: 0;
+        padding: 0;
       }
-    }
-
-    .cursor::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      border-radius: var(--radius);
-      border: 2px solid #64FFDA;
-      opacity: var(--scale);
-      -webkit-transform: scale(var(--scale));
-      transform: scale(var(--scale));
-      transition: 300ms opacity cubic-bezier(0.39, 0.575, 0.565, 1),
-        300ms transform cubic-bezier(0.39, 0.575, 0.565, 1),
-        150ms border-radius cubic-bezier(0.39, 0.575, 0.565, 1);
-    }
-
-    html:not(html:hover) .cursor::after {
-      opacity: 0;
-      transform: scale(0);
-    }
-  </style>
-</head>
-
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-  <span class="cursor"></span>
-
-  <script data-ad-client="ca-pub-1901273218957007" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>
-    function docReady(fn) {
-      if (document.readyState === "complete" || document.readyState === "interactive") {
-        setTimeout(fn, 1);
-      } else {
-        document.addEventListener("DOMContentLoaded", fn);
+      
+      /* Loading state */
+      .loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: #22c55e;
+        font-family: monospace;
+        font-size: 14px;
       }
-    }
-
-    let onElement
-
-    window.docReady = docReady(() => {
-      const updateProperties = (elem, state) => {
-        elem.style.setProperty('--x', `${state.x}px`)
-        elem.style.setProperty('--y', `${state.y}px`)
-        elem.style.setProperty('--width', `${state.width}px`)
-        elem.style.setProperty('--height', `${state.height}px`)
-        elem.style.setProperty('--radius', state.radius)
-        elem.style.setProperty('--scale', state.scale)
-        elem.style.setProperty('--color', state.color)
-        elem.style.setProperty('--zIndex', state.zIndex)
-        elem.style.setProperty('--boxShadow', state.boxShadow)
+      
+      .loading::after {
+        content: 'Initializing da9i.sh...';
+        animation: blink 1s infinite;
       }
+      
+      @keyframes blink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div style="color: #22c55e; background: #0a0a0a; padding: 20px; font-family: monospace; min-height: 100vh;">
+        <pre>
+$ ./da9i.sh
+Error: JavaScript is required to run this terminal.
 
-      document.querySelectorAll('.cursor').forEach(cursor => {
-        const createState = e => {
-          const defaultState = {
-            x: e.clientX,
-            y: e.clientY,
-            width: 40,
-            height: 40,
-            radius: '50%',
-            color: 'transparent',
-            zIndex: 99,
-            boxShadow: "inset 0 0 0 0 #64FFDA"
-          }
+Please enable JavaScript and reload the page.
 
-          const computedState = {}
-
-          if (onElement != null) {
-            const { top, left, width, height } = onElement.getBoundingClientRect()
-            const radius = window.getComputedStyle(onElement).borderTopLeftRadius
-
-            computedState.x = left + width / 2
-            computedState.y = top + height / 2
-            computedState.width = width + 10
-            computedState.height = height + 10
-            computedState.radius = radius
-            computedState.scale = 1
-
-            // if (onElement.childNodes[0].nodeName === "#text") {
-            //   computedState.color = "#64FFDA"
-            //   computedState.boxShadow = "inset 4000px 0 0 0 #64FFDA"
-            //   computedState.zIndex = -1
-            // }
-          }
-
-          return {
-            ...defaultState,
-            ...computedState
-          }
-        }
-
-        document.addEventListener('mousemove', e => {
-          const state = createState(e)
-          updateProperties(cursor, state)
-        })
-
-        document.querySelectorAll('[datanav]').forEach(elem => {
-          elem.addEventListener('mouseenter', () => {
-            onElement = elem
-          })
-          elem.addEventListener('mouseleave', () => (onElement = undefined))
-        })
-      })
-    })
-  </script>
-</body>
-
+-- Danish Shah
+        </pre>
+      </div>
+    </noscript>
+    <div id="root">
+      <div class="loading"></div>
+    </div>
+  </body>
 </html>
