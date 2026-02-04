@@ -285,34 +285,6 @@ const BOOT_SEQUENCE = [
   { text: '', delay: 2700 },
 ];
 
-// Typing animation component
-const TypedText = ({ text, onComplete, speed = 30 }) => {
-  const [displayed, setDisplayed] = useState('');
-  
-  useEffect(() => {
-    if (!text) {
-      onComplete?.();
-      return;
-    }
-    
-    let i = 0;
-    const timer = setInterval(() => {
-      if (i < text.length) {
-        setDisplayed(text.slice(0, i + 1));
-        AudioEngine.playKeystroke();
-        i++;
-      } else {
-        clearInterval(timer);
-        onComplete?.();
-      }
-    }, speed);
-    
-    return () => clearInterval(timer);
-  }, [text, speed, onComplete]);
-  
-  return <span>{displayed}</span>;
-};
-
 // Main Terminal Component
 const Terminal = () => {
   const [lines, setLines] = useState([]);
